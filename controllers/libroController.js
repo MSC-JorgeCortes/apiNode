@@ -60,3 +60,15 @@ exports.deleteLibro = async (req, res) => {
   }
 };
 
+//rama ejemplo1
+// Obtener libros por autor
+exports.getLibrosByAutor = async (req, res) => {
+  try {
+    const [rows] = await db.query('SELECT * FROM libro WHERE idAutor = ?', [req.params.idAutor]);
+    if (rows.length === 0) return res.status(404).json({ message: 'No hay libros para este autor' });
+    res.json(rows);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  } 
+};
+
