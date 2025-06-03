@@ -5,8 +5,7 @@ const cors = require('cors');
 const app = express();
 const librosRoutes = require('./routes/Libros');
 
-const allowedOrigins = ['http://localhost' ];
-
+const allowedOrigins = ['http://localhost:5500','http://127.0.0.1:5500',];
 
 app.use(cors({
     origin: (origin, callback)=> {
