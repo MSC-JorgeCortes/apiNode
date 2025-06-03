@@ -4,6 +4,7 @@ const libroController = require('../controllers/libroController');
 
 router.get('/', libroController.getAllLibros);
 router.get('/:id', libroController.getLibro);
+ 
 router.post('/', libroController.createLibro);
 router.put('/:id', libroController.updateLibro);
 router.delete('/:id', libroController.deleteLibro);

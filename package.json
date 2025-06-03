@@ -1,15 +1,15 @@
 {
-  "name": "apie1",
+  "name": "apieje1",
   "version": "1.0.0",
-  "description": "ejemplo de un api crud",
-  "main": "server.js",
+  "description": "alumnos del 4g",
+  "main": "db.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "jorge cortes domímguez",
+  "author": "Jorge Cortés Domínguez",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^5.1.0",
     "mysql2": "^3.14.0",
     "sequelize": "^6.37.7"
