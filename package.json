@@ -2,10 +2,10 @@
   "name": "apieje1",
   "version": "1.0.0",
   "description": "alumnos del 4g",
-  "main": "db.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon db.js"
+    "start": "nodemon server.js"
   },
   "author": "Jorge Cortés Domínguez",
   "license": "ISC",
