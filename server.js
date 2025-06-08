@@ -4,7 +4,7 @@ require('dotenv').config();
 const cors = require('cors');
 
 const app = express();
-const librosRoutes = require('./routes/Libros.js');
+const librosRoutes = require('./routes/Libros');
 
 const allowedOrigins = ['http://localhost:5500','http://127.0.0.1:5500',];
 //ejercicio para aplicar un branch en git la  rama se llama ejemplo1
